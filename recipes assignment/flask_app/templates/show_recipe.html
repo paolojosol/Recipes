@@ -1,0 +1,62 @@
+<html>
+    <head>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+</head>
+<body>
+    <div class="d-flex justify-content-between align-items-center">
+        <h1>Welcome {{user.first_name}} {{user.last_name}}!</h1>
+        <div class="m-3">
+            <a href="/home">Home</a>
+            <a href="/logout">Logout</a>
+        </div>
+    </div>
+<div class="container product-detail-area">
+<div class="row">
+    <div class="col-md-8">
+        <div class="panel-group" id="accordion">
+            <h2>{{recipe.name}}</h2>
+            <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+                 Description
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse in">
+        <p> {{recipe.description}}</p>
+    </div>
+    <div class="panel-heading">
+        <h4 class="panel-title">
+                   Under 30 Minutes
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+          <p>{{recipe.under_30}}</p>
+      </div>
+      <div class="panel-heading">
+        <h4 class="panel-title">
+                   Instructions
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+          <p>{{recipe.instructions}}</p>
+      </div>
+      <div class="panel-heading">
+        <h4 class="panel-title">
+                   Date
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+          <p>{{recipe.made}}</p>
+      </div>
+  </div>
+  </div>
+</div>
+
+   
+</div>
+</div>
+</body>
+</html>
